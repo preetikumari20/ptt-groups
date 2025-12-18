@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTT Group — IT, Taxation & Accounting Solutions</title>
+
+  <meta name="description" content="PTT Group provides comprehensive IT solutions, cybersecurity, taxation, and accounting services to help businesses in India grow securely and efficiently.">
+  <meta name="keywords" content="PTT Group, IT Services, Cybersecurity, Taxation Services, Accounting, Cloud Solutions, AI Integration, Business Automation, New Delhi">
+  <meta name="author" content="PTT Group">
+
+  <meta property="og:title" content="PTT Group – IT, Taxation & Accounting Experts">
+  <meta property="og:description" content="Empowering businesses with cutting-edge IT solutions and expert financial services.">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PTT Group",
+    "url": "https://pttgroup.com",
+    "logo": "ptt_logo-removebg-preview.png",
+    "description": "PTT Group provides IT solutions, taxation, and accounting services.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New Delhi",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91 9910911097",
+      "contactType": "customer service",
+      "email": "pttgrouptax@gmail.com"
+    }
+  }
+  </script>
+
+  <style>
+
+
+
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body { background:#f1f2f6; color:#0a0a0a; font-family:'Poppins', sans-serif; overflow-x:hidden; }
+
+    /* Global IT background texture */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(233,234,237,0.92), rgba(233,234,237,0.92)),
+        url("9.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: -1;
+    }
+
+    header {
+      width:100%;
+      padding:20px 6%;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:fixed;
+      top:0;
+      left:0;
+      background:rgba(255,255,255,0.75);
+      backdrop-filter:blur(15px);
+      z-index:1000;
+      border-bottom:1px solid rgba(34,34,34,0.1);
+      transition: all 0.3s ease;
+    }
+    header.scrolled {
+      background:rgba(255,255,255,0.95);
+      box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    }
+    .container {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width:100%;
+      max-width:1600px;
+      margin:0 auto;
+      padding:0 20px;
+    }
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .logo img {
+      height:82px;
+      width:auto;
+      object-fit:contain;
+      filter:drop-shadow(0 0 6px rgba(255,107,0,0.3));
+    }
+    .logo span {
+      font-size:20px;
+      font-weight:800;
+      color:#ff6b00;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+    }
+
+    .nav-links {
+      display:flex;
+      gap:60px; 
+      list-style:none;
+      align-items:center;
+    }
+    nav a {
+      position:relative;
+      text-decoration:none;
+      color:#0a0a0a;
+      font-size:16px;
+      font-weight:500;
+      transition:all 0.4s ease;
+      padding:10px 8px;
+      white-space:nowrap;
+      border-radius:8px;
+    }
+    nav a::after {
+      content:"";
+      position:absolute;
+      bottom:4px;
+      left:50%;
+      width:0;
+      height:3px;
+      background:#ff6b00;
+      border-radius:3px;
+      transition:all 0.4s ease;
+      transform:translateX(-50%);
+    }
+    nav a:hover::after {
+      width:80%;
+    }
+    nav a:hover {
+      color:#0ea5e9;
+      background:rgba(14,165,233,0.08);
+    }
+
+    #mobileMenu {
+      font-size:32px;
+      color:#ff6b00;
+      cursor:pointer;
+      display:none;
+    }
+
+    .hero {
+      height:100vh;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+    }
+    .swiper {
+      width:100%;
+      height:100%;
+    }
+    .swiper-slide {
+      background-size:cover;
+      background-position:center;
+      position:relative;
+    }
+    .swiper-slide::before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, rgba(0,0,0,0.65), rgba(0,0,0,0.35));
+      z-index:1;
+    }
+    .hero-content {
+      position:relative;
+      z-index:2;
+      max-width:1000px;
+      padding:0 30px;
+    }
+    .hero h2 {
+      font-size:64px;
+      line-height:1.2;
+      margin-bottom:24px;
+      text-shadow:0 4px 30px rgba(0,0,0,0.8);
+      animation:fadeInUp 1.2s ease-out;
+    }
+    .hero p {
+      font-size:26px;
+      margin-bottom:40px;
+      opacity:0.95;
+      text-shadow:0 2px 15px rgba(0,0,0,0.7);
+      animation:fadeInUp 1.4s ease-out;
+    }
+    .cta-btn {
+      padding:18px 48px;
+      background:#0ea5e9;
+      color:#000;
+      font-size:20px;
+      font-weight:600;
+      border:none;
+      border-radius:50px;
+      cursor:pointer;
+      transition:all 0.5s ease;
+      box-shadow:0 10px 30px rgba(14,165,233,0.4);
+      animation:fadeInUp 1.6s ease-out;
+    }
+    .cta-btn:hover {
+      background:#ff9a30;
+      transform:translateY(-8px) scale(1.05);
+      box-shadow:0 20px 40px rgba(255,154,48,0.5);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity:0; transform:translateY(40px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+
+    .ball {
+      position:absolute;
+      width:200px; height:200px;
+      border-radius:50%;
+      background:radial-gradient(circle at 30% 30%, #0ea5e9, #cc5500);
+      filter:blur(80px);
+      opacity:0.25;
+      animation:float 12s infinite ease-in-out;
+      z-index:0;
+    }
+    .b1 { top:10%; left:5%; animation-delay:0s; }
+    .b2 { bottom:15%; right:8%; animation-delay:6s; }
+    @keyframes float {
+      0%,100% { transform:translateY(0) translateX(0); }
+      50% { transform:translateY(-50px) translateX(30px); }
+    }
+
+    section { padding:140px 6%; }
+    h2.section-title { 
+      font-size:44px; 
+      margin-bottom:24px; 
+      color:#0ea5e9; 
+      text-align:center; 
+      letter-spacing:1.2px; 
+      position:relative;
+    }
+    h2.section-title::after {
+      content:"";
+      width:80px;
+      height:4px;
+      background:#ff6b00;
+      display:block;
+      margin:20px auto;
+      border-radius:2px;
+    }
+    p.section-subtitle { 
+      text-align:center; 
+      max-width:800px; 
+      margin:0 auto 60px; 
+      opacity:0.85; 
+      font-size:19px; 
+      line-height:1.7;
+    }
+
+    .mvv-wrapper, .about-wrapper, .why-list, .group-grid, .service-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:50px;
+      margin-top:60px;
+    }
+    .about-box, .why-item, .group-card, .service-card {
+      background:#ffffff;
+      padding:40px;
+      border-radius:18px;
+      border:1px solid #e0e8f5;
+      transition:all 0.4s ease;
+      box-shadow:0 5px 15px rgba(0,0,0,0.03);
+    }
+    .about-box:hover, .why-item:hover, .group-card:hover, .service-card:hover {
+      transform:translateY(-15px);
+      border-color:#0ea5e9;
+      box-shadow:0 20px 40px rgba(14,165,233,0.15);
+    }
+
+    .contact-box {
+      background:#ffffff;
+      padding:50px;
+      border-radius:18px;
+      border:1px solid #e0e8f5;
+      max-width:700px;
+      margin:40px auto 0;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    }
+    .contact-box label {
+      display:block;
+      margin:12px 0 6px;
+      font-weight:500;
+      color:#333;
+    }
+    .contact-box input, .contact-box textarea {
+      width:100%;
+      padding:15px;
+      margin-bottom:12px;
+      border-radius:8px;
+      border:1px solid #ddd;
+      outline:none;
+      background:#f9f9f9;
+      font-size:16px;
+      transition:border 0.3s;
+    }
+    .contact-box input:focus, .contact-box textarea:focus {
+      border-color:#0ea5e9;
+      background:#fff;
+    }
+    .contact-box button {
+      padding:16px 40px;
+      background:#0ea5e9;
+      border:none;
+      border-radius:50px;
+      font-size:18px;
+      font-weight:600;
+      cursor:pointer;
+      color:#fff;
+      transition:all 0.4s;
+      box-shadow:0 8px 20px rgba(14,165,233,0.3);
+    }
+    .contact-box button:hover {
+      background:#ff6b00;
+      transform:translateY(-4px);
+      box-shadow:0 12px 25px rgba(255,107,0,0.3);
+    }
+    .success-message {
+      display:none;
+      margin-top:20px;
+      padding:15px;
+      background:#d4edda;
+      color:#155724;
+      border-radius:8px;
+      text-align:center;
+      font-weight:500;
+    }
+    .error-message {
+      color:#d32f2f;
+      font-size:14px;
+      margin-top:-8px;
+      margin-bottom:12px;
+      display:none;
+    }
+
+    .img-wrapper {
+      text-align: center;
+      margin: 60px 0;
+    }
+    .img-wrapper img {
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    /* Company Profile Cards */
+    .profile-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+      gap:40px;
+      margin-top:60px;
+    }
+    .profile-card {
+      background:#ffffff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:all 0.4s ease;
+    }
+    .profile-card:hover {
+      transform:translateY(-12px);
+      box-shadow:0 25px 50px rgba(14,165,233,0.18);
+    }
+    .profile-card-header {
+      height:180px;
+      background:linear-gradient(135deg, #0ea5e9, #ff6b00);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:48px;
+    }
+    .profile-card-body {
+      padding:35px;
+      text-align:center;
+    }
+    .profile-card-body h3 {
+      font-size:24px;
+      margin-bottom:16px;
+      color:#0ea5e9;
+    }
+    .profile-card-body p {
+      line-height:1.7;
+      opacity:0.88;
+    }
+
+    /* HORIZONTAL SCROLLING GALLERY */
+    .horizontal-gallery {
+      margin-top: 60px;
+      overflow: hidden;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 30px;
+      animation: scrollLeft 45s linear infinite;
+      width: calc(380px * 12 + 30px * 11);
+    }
+
+    .gallery-track:hover {
+      animation-play-state: paused;
+    }
+
+    .gallery-card {
+      flex: 0 0 380px;
+      height: 280px;
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-12px) scale(1.05);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.15);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+      color: #fff;
+    }
+
+    .gallery-overlay h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-card {
+        flex: 0 0 280px;
+        height: 220px;
+      }
+      .gallery-track { gap: 20px; }
+      .gallery-overlay h4 { font-size: 16px; }
+    }
+
+    footer {
+      background:#ffffff;
+      margin-top:100px;
+      border-top:1px solid #eee;
+    }
+    .footer-top {
+      display:flex;
+      flex-wrap:wrap;
+      gap:60px;
+      justify-content:center;
+      padding:80px 6%;
+      max-width:1400px;
+      margin:auto;
+    }
+    .footer-top div { flex:1; min-width:220px; }
+    .social-links {
+      text-align:center;
+      padding:20px 0;
+    }
+    .social-links a {
+      margin:0 18px;
+      font-size:28px;
+      color:#0ea5e9;
+      transition:all 0.3s;
+    }
+    .social-links a:hover {
+      color:#ff6b00;
+      transform:translateY(-5px);
+    }
+   
+
+/* Flex layout to push footer down */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* All main content grows */
+body > header,
+body > section {
+  flex-shrink: 0;
+}
+
+/* Footer sticks to bottom naturally */
+footer {
+  margin-top: auto;
+  background: #ffffff;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.05);
+}
+
+/* Footer top layout refinement */
+.footer-top {
+  padding: 70px 6% 50px;
+  gap: 50px;
+}
+
+.footer-top h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #0ea5e9;
+  letter-spacing: 0.6px;
+}
+
+.footer-top p,
+.footer-top a {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.footer-top a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-top a:hover {
+  color: #ff6b00;
+}
+
+/* Social icons centered & spaced */
+.social-links {
+  padding: 25px 0 10px;
+  border-top: 1px solid #eee;
+}
+
+.social-links a {
+  font-size: 26px;
+}
+
+/* Footer bottom bar (NOT fixed anymore) */
+.footer-bottom {
+  position: relative;
+  padding: 18px 10px;
+  background: #f8fbff;
+  font-size: 14.5px;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+/* Mobile footer spacing */
+@media (max-width: 768px) {
+  .footer-top {
+    text-align: center;
+  }
+
+  .footer-top div {
+    margin-bottom: 25px;
+  }
+}
+
+    @media (max-width: 1200px) {
+      .nav-links { gap:40px; }
+    }
+    @media (max-width: 1024px) {
+      .nav-links {
+        position:fixed;
+        top:100px;
+        left:0;
+        width:100%;
+        background:rgba(255,255,255,0.98);
+        backdrop-filter:blur(10px);
+        flex-direction:column;
+        padding:50px 0;
+        gap:35px;
+        transform:translateY(-150%);
+        transition:all 0.5s ease;
+        box-shadow:0 10px 30px rgba(0,0,0,0.1);
+      }
+      .nav-links.active { transform:translateY(0); }
+      nav a { font-size:18px; padding:12px 20px; white-space:normal; text-align:center; }
+      #mobileMenu { display:block; }
+      .hero h2 { font-size:48px; }
+      .hero p { font-size:22px; }
+      section { padding:100px 6%; }
+    }
+    /* Vision & Mission image styling */
+.image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Values box full width */
+.values-box {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .image-box {
+    order: 2;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <img src="ptt_logo-removebg-preview.png" alt="PTT Group Logo">
+        <span>PTT GROUP</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#vision-mission">Vision & Mission</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#profile">Company Profile</a></li>
+          <li><a href="#services">Business Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="mobileMenu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=1400')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1400')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1400')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=1400')"></div>
+        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1542744095-291d1f67b221?w=1400')"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="ball b1"></div>
+    <div class="ball b2"></div>
+
+    <div class="hero-content">
+      <h2>Guarding Your Digital World With Next-Gen Technologies</h2>
+      <p>PTT Group delivers comprehensive IT, taxation, accounting & automation solutions that empower businesses to scale securely and efficiently.</p>
+      <a href="#about"><button class="cta-btn">Explore More</button></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-subtitle">Your trusted partner for IT and financial excellence in a digital world.</p>
+
+    <div class="about-wrapper">
+      <div class="about-box">
+        <h3>Who We Are</h3>
+        <p>Founded in 2021 in New Delhi, India, PTT Group is a dynamic multi-domain firm specializing in IT solutions, cybersecurity, taxation, and accounting services. We bridge the gap between technology and finance to help businesses thrive in an increasingly digital landscape.</p>
+        <p>Our multidisciplinary approach combines deep technical expertise with financial acumen, enabling us to deliver holistic solutions that drive operational efficiency, ensure regulatory compliance, and foster sustainable growth for our clients.</p>
+      </div>
+      <div class="about-box">
+        <h3>Our Culture</h3>
+        <p>Our team thrives on collaboration, continuous learning, and innovation. We foster an inclusive, supportive environment where diverse ideas flourish, empowering every member to contribute meaningfully and deliver exceptional value to clients.</p>
+        <p>We invest heavily in professional development, encouraging certifications, workshops, and knowledge-sharing sessions to keep our team at the forefront of industry trends.</p>
+      </div>
+      <div class="about-box">
+        <h3>What We Do</h3>
+        <p>We provide end-to-end services ranging from custom software development, cloud migration, and AI integration to GST/ITR compliance, tax planning, bookkeeping, audits, and AI-driven business automation.</p>
+        <p>Serving startups, SMEs, and large enterprises across sectors like manufacturing, e-commerce, healthcare, education, and finance, we tailor every solution to unique business challenges and goals.</p>
+      </div>
+      <div class="about-box">
+        <h3>Our Commitment</h3>
+        <p>We promise reliable, secure, and scalable solutions backed by expert guidance and proactive support. Our client-first philosophy ensures transparency, timely delivery, and measurable results.</p>
+        <p>With a strong emphasis on data security, ethical practices, and long-term partnerships, we help businesses navigate complex challenges and achieve sustained success in a rapidly evolving digital economy.</p>
+      </div>
+    </div>
+
+   </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-subtitle">Industries & sectors we actively serve with expertise</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:40px; margin-top:60px;">
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200" alt="IT Solutions" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        <div class="gallery-overlay"><h4>Information Technology Solutions</h4></div>
+      </div>
+      <div class="gallery-card">
+        <img src="2.jpg" alt="Taxation Services" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        <div class="gallery-overlay"><h4>Taxation & Compliance Services</h4></div>
+      </div>
+      <div class="gallery-card">
+        <img src="3.jpg" alt="Accounting Services" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        <div class="gallery-overlay"><h4>Accounting & Financial Management</h4></div>
+      </div>
+      <div class="gallery-card">
+        <img src="4.jpg" alt="Cybersecurity" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        <div class="gallery-overlay"><h4>Cybersecurity & Data Protection</h4></div>
+      </div>
+      <div class="gallery-card">
+        <img src="5.jpg" alt="Business Consulting" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        <div class="gallery-overlay"><h4>Business Advisory & Consulting</h4></div>
+      </div>
+      <div class="gallery-card">
+        <img src="6.jpg" alt="Cloud & Automation" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        <div class="gallery-overlay"><h4>Cloud, AI & Automation</h4></div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="vision-mission">
+  <h2 class="section-title">Vision • Mission • Values</h2>
+  <p class="section-subtitle">
+    Built on excellence. Driven by innovation. Powered by trust.
+  </p>
+
+  <div class="mvv-wrapper">
+
+    <!-- Mission -->
+    <div class="about-box">
+      <div class="emoji">🚀</div>
+      <h3>Our Mission</h3>
+     
+      <p>
+      o empower businesses with intelligent IT solutions and precise financial services that enable smarter, faster, and more confident decision-making at every level of the organization. We partner with startups, SMEs, and enterprises to transform complex challenges into streamlined, technology-driven opportunities.
+
+We simplify intricate technology, compliance, and regulatory processes through secure, scalable, and future-ready solutions. By integrating advanced software development, cloud computing, cybersecurity, taxation, accounting, and automation, we help organizations enhance operational efficiency, ensure regulatory compliance, reduce risk, and achieve sustainable long-term growth in an ever-evolving digital economy.
+      </p>
+    </div>
+
+    <!-- CENTER COLUMN (Image + Values stacked) -->
+    <div class="center-stack">
+
+      <!-- Image -->
+      <div class="about-box image-box">
+        <img src="vission and mission.png" alt="Vision Mission Illustration">
+      </div>
+
+      <!-- Values -->
+      <div class="about-box values-box">
+        <div class="emoji">💎</div>
+        <h3>Our Values</h3>
+        <p>
+          Integrity, innovation, transparency, reliability, and customer-first
+          thinking define who we are and how we work.
+        </p>
+        <p>
+          These values guide our decisions, strengthen trust, and help us build
+          long-term partnerships with our clients.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Vision -->
+    <div class="about-box">
+      <div class="emoji">🌍</div>
+      <h3>Our Vision</h3>
+      
+      
+      <p>
+       To become a globally trusted organization where advanced technology, financial expertise, and strategic insight converge to transform businesses and industries. We envision a future where organizations of all sizes leverage digital innovation and sound financial governance to operate with agility, transparency, and confidence.
+
+      Our vision is to set new benchmarks in IT services, cloud transformation, cybersecurity, artificial intelligence, and professional accounting by delivering solutions that are innovative, secure, compliant, and scalable. Through continuous learning, ethical practices, and customer-centric innovation, we aim to drive digital excellence, long-term value creation, and sustainable growth for our clients worldwide.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="why">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="section-subtitle">We stand out with expertise, reliability, and a client-centric approach.</p>
+
+    <div class="why-list">
+      <div class="why-item">
+        <i class="fas fa-shield-alt fa-3x" style="color:#0ea5e9;"></i>
+        <h3>Proven Expertise</h3>
+        <p>Years of experience in IT and finance with a proven track record of successful projects across India.</p>
+      </div>
+      <div class="why-item">
+        <i class="fas fa-users fa-3x" style="color:#0ea5e9;"></i>
+        <h3>Client-Focused</h3>
+        <p>Tailored solutions designed to meet your unique business needs and goals.</p>
+      </div>
+      <div class="why-item">
+        <i class="fas fa-lock fa-3x" style="color:#0ea5e9;"></i>
+        <h3>Security First</h3>
+        <p>Advanced cybersecurity measures to protect your data and operations at all times.</p>
+      </div>
+      <div class="why-item">
+        <i class="fas fa-chart-line fa-3x" style="color:#0ea5e9;"></i>
+        <h3>Growth Oriented</h3>
+        <p>Strategies that drive efficiency, compliance, and sustainable business growth.</p>
+      </div>
+      <div class="why-item">
+        <i class="fas fa-headset fa-3x" style="color:#0ea5e9;"></i>
+        <h3>24/7 Support</h3>
+        <p>Dedicated support team available whenever you need assistance.</p>
+      </div>
+      <div class="why-item">
+        <i class="fas fa-rupee-sign fa-3x" style="color:#0ea5e9;"></i>
+        <h3>Cost-Effective</h3>
+        <p>Competitive pricing without compromising on quality or results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Company Profile with More Content -->
+  <section id="profile">
+    <h2 class="section-title">Company Profile</h2>
+    <p class="section-subtitle">A journey of innovation, trust, and excellence since 2021</p>
+
+    <div class="profile-grid">
+      <div class="profile-card">
+        <div class="profile-card-header"><i class="fas fa-building"></i></div>
+        <div class="profile-card-body">
+          <h3>Our Foundation & Growth</h3>
+          <p>Established in 2021 in New Delhi, PTT Group began as a passionate team determined to bridge advanced technology with expert financial services. In just a few years, we've grown exponentially, serving over 150 clients across diverse industries with high-impact, customized solutions.</p>
+          <p>Our rapid expansion is fueled by a commitment to quality, innovation, and client satisfaction, earning us recognition as a trusted partner for digital transformation and financial compliance.</p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-card-header"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="profile-card-body">
+          <h3>Headquarters & National Presence</h3>
+          <p>Headquartered in New Delhi with modern, state-of-the-art facilities, we maintain a strong pan-India presence through strategic partnerships and remote delivery capabilities.</p>
+          <p>Our centralized operations ensure seamless coordination, quick response times, and consistent service quality regardless of client location.</p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-card-header"><i class="fas fa-rocket"></i></div>
+        <div class="profile-card-body">
+          <h3>Innovation & Future Outlook</h3>
+          <p>We have developed proprietary tools and frameworks in AI, cloud computing, cybersecurity, and automated compliance systems. As of 2025, PTT Group is actively expanding internationally while continuing to invest in emerging technologies like blockchain and advanced analytics.</p>
+          <p>Our R&D initiatives keep us ahead of industry trends, ensuring clients always benefit from cutting-edge, future-ready solutions.</p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-card-header"><i class="fas fa-handshake"></i></div>
+        <div class="profile-card-body">
+          <h3>Our Core Promise & Ethics</h3>
+          <p>We are deeply committed to ethical practices, complete transparency, data privacy, and building enduring partnerships based on trust and mutual growth.</p>
+          <p>Every engagement is guided by integrity, professionalism, and a genuine desire to contribute to our clients' long-term success and sustainability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Business Services</h2>
+    <p class="section-subtitle">Comprehensive solutions tailored for your success.</p>
+
+  <section class="services-section">
+  <div class="service-grid">
+
+    <!-- Custom Software Development -->
+    <div class="service-card">
+      <h3>Custom Software Development</h3>
+      <p>
+        We design and develop tailor-made web applications, mobile apps, automation systems, and enterprise-grade platforms aligned precisely with your business objectives and operational needs.
+      </p>
+      <div class="service-detail">
+        Our end-to-end software development process covers requirement analysis, system architecture, UI/UX design, development, testing, deployment, and ongoing support. 
+        Using modern, industry-leading technologies such as React, Node.js, Python, REST APIs, and cloud-native architectures, we build secure, scalable, and high-performance solutions. 
+        Every application is optimized for speed, usability, data security, and future scalability, ensuring seamless performance across devices and long-term business growth.
+      </div>
+    </div>
+
+    <!-- Cybersecurity Solutions -->
+    <div class="service-card">
+      <h3>Cybersecurity Solutions</h3>
+      <p>
+        Comprehensive cybersecurity services designed to protect your digital assets, data, and infrastructure from evolving cyber threats and vulnerabilities.
+      </p>
+      <div class="service-detail">
+        We offer vulnerability assessment and penetration testing (VAPT), network and application security audits, data protection strategies, and compliance support. 
+        Our cybersecurity experts implement advanced threat detection, risk mitigation frameworks, firewall and endpoint security, and incident response planning to safeguard your business against cyberattacks, data breaches, and operational disruptions.
+      </div>
+    </div>
+
+    <!-- Accounting & Taxation -->
+    <div class="service-card">
+      <h3>Accounting & Taxation</h3>
+      <p>
+        Professional Chartered Accountant services covering accounting, taxation, compliance, audits, and payroll management for individuals, startups, SMEs, and corporate entities.
+      </p>
+      <div class="service-detail">
+        Our CA team provides end-to-end services including bookkeeping, GST registration & returns, income tax filing, TDS compliance, payroll processing, statutory and internal audits, and ROC filings. 
+        We ensure accurate financial reporting, timely statutory compliance, tax planning & optimization, and audit-ready documentation, helping businesses minimize tax risks, avoid penalties, and maintain financial transparency.
+      </div>
+    </div>
+
+    <!-- Cloud Migration -->
+    <div class="service-card">
+      <h3>Cloud Migration</h3>
+      <p>
+        Secure, seamless, and efficient migration of applications, databases, and IT infrastructure to cloud platforms with minimal downtime and maximum reliability.
+      </p>
+      <div class="service-detail">
+        Our cloud experts manage the complete migration lifecycle including infrastructure assessment, cloud architecture design, data migration, security configuration, performance optimization, and cost management. 
+        We specialize in AWS, Microsoft Azure, and Google Cloud, enabling businesses to achieve scalability, high availability, enhanced security, and reduced operational costs with continuous post-migration support.
+      </div>
+    </div>
+
+    <!-- AI Integration -->
+    <div class="service-card">
+      <h3>AI Integration</h3>
+      <p>
+        Advanced AI-powered solutions that automate processes, improve decision-making, and enhance customer experience through intelligent systems.
+      </p>
+      <div class="service-detail">
+        We integrate artificial intelligence into your existing platforms through AI chatbots, workflow automation, machine learning models, recommendation systems, and predictive analytics. 
+        Our AI solutions help businesses automate repetitive tasks, analyze large datasets, predict trends, improve operational efficiency, and deliver personalized user experiences using data-driven intelligence.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
+     
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">Have a project or need expert assistance? We are here to help.</p>
+
+    <div class="contact-box">
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required />
+        <div class="error-message" id="nameError"></div>
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="example@gmail.com" required />
+        <div class="error-message" id="emailError"></div>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="+91 9910911097" required />
+        <div class="error-message" id="phoneError"></div>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <div class="error-message" id="messageError"></div>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="success-message" id="successMessage">
+        Thank you! Your message has been successfully submitted. We'll get back to you soon.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>PTT GROUP</h3>
+        <p>A multi-domain technology, taxation & accounting firm delivering secure, innovative and scalable solutions for modern businesses.</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <p><a href="#about">About Us</a></p>
+        <p><a href="#services">Our Services</a></p>
+        <p><a href="#products">Products</a></p>
+        <p><a href="#career">Careers</a></p>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <p>Help Center</p>
+        <p>Documentation</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: pttgrouptax@gmail.com</p>
+        <p>Phone: +91 9910911097</p>
+        <p>Address: New Delhi, India</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ptt_.group/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/ptt-groups/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://x.com/ptt_group91" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://wa.me/919910911097" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 PTT Group — Guarding Your Digital World With Passion & Precision
+    </div>
+  </footer>
+
+  <script>
+    // Hero Slider
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      speed: 1200,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobileMenu');
+    const navLinks = document.getElementById('navLinks');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = mobileMenu.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Enhanced Form Validation
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    const emailError = document.getElementById('emailError');
+    const phoneError = document.getElementById('phoneError');
+    const nameError = document.getElementById('nameError');
+    const messageError = document.getElementById('messageError');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let valid = true;
+
+      // Reset errors
+      emailError.textContent = '';
+      emailError.style.display = 'none';
+      phoneError.textContent = '';
+      phoneError.style.display = 'none';
+      nameError.textContent = '';
+      nameError.style.display = 'none';
+      messageError.textContent = '';
+      messageError.style.display = 'none';
+
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (name === '') {
+        nameError.textContent = 'Please enter your full name.';
+        nameError.style.display = 'block';
+        valid = false;
+      }
+
+      if (!email.endsWith('@gmail.com') || email.length < 11) {
+        emailError.textContent = 'Email must be a valid Gmail address (e.g., example@gmail.com).';
+        emailError.style.display = 'block';
+        valid = false;
+      }
+
+      // Indian mobile number validation (10 digits, starts with 6-9)
+      const phoneRegex = /^[6-9]\d{9}$/;
+      const cleanPhone = phone.replace(/[\+\-\s]/g, '');
+      if (!phoneRegex.test(cleanPhone)) {
+        phoneError.textContent = 'Please enter a valid 10-digit Indian mobile number (e.g., 9910911097).';
+        phoneError.style.display = 'block';
+        valid = false;
+      }
+
+      if (message === '') {
+        messageError.textContent = 'Please enter your message.';
+        messageError.style.display = 'block';
+        valid = false;
+      }
+
+      if (valid) {
+        // Simulate successful submission
+        contactForm.style.opacity = '0.6';
+        setTimeout(() => {
+          successMessage.style.display = 'block';
+          contactForm.reset();
+          contactForm.style.opacity = '1';
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+          }, 6000);
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>
